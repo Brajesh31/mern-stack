@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                padding: 15px;
+                box-sizing: border-box;
+                background-color: rgb(119, 255, 0);
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 9px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            li {
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                background-color: rgb(23, 155, 203);
+                border-radius: 9px;
+                padding: 3px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                nav {
+                    display: block;
+                }
+
+                ul {
+                    flex-direction: column;
+                    background-color: rgb(119, 255, 0);
+                }
+            }
+
+            .carddibba {
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
+                border: 2px solid red;
+                display: flex;
+                gap: 15px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .cards {
+                background-color: rgb(220, 20, 197);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 250px;
+                padding: 30px;
+                width: 189px;
+                border: 1px solid blue;
+                border-radius: 15px;
+                transition-duration: 1s;
+                transition-property: all;
+            }
+
+            .cards:hover {
+                box-shadow: 0px 0px 13px 0px rgb(55, 146, 151),
+                    rgba(1, 70, 100, 0.6) 0px 1px 80px 19px inset;
+                transform: scale(1.05, 1.05);
+            }
+
+            .cards img {
+                margin: 0px auto;
+                height: 100px;
+                border-radius: 50%;
+                width: 100px;
+                border: 2px solid black;
+            }
+
+            button {
+                margin-top: 4px;
+                outline: none;
+                border-radius: 5px;
+                height: 40px;
+                padding: 5px;
+                background-color: rgb(210, 149, 36);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">Conatct</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">courses</a></li>
+            </ul>
+        </nav>
+        <section class="carddibba">
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+            <div class="cards">
+                <div style="display:flex;">
+                    <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="photo">
+                </div>
+                <div>
+                    <h1>card</h1>
+                </div>
+                <button>
+                    Order now
+                </button>
+
+            </div>
+
+
+        </section>
+    </body>
+
+</html>

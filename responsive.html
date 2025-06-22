@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+        
+        @media screen and (max-width:520px),
+        (orientation:landscape) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width:720px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        .dibba {
+            background-color: purple;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 80%;
+        }
+        
+        .animate {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            background-color: brown;
+            transition-duration: 1s;
+            /* transition-property: border-radius;
+               */
+            transition-property: all;
+        }
+        
+        .animate:hover {
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+        
+        .linear {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            background-color: brown;
+            transition: linear;
+            transition-duration: 3s;
+        }
+        
+        .linear:hover {
+            background-color: aquamarine;
+            width: 900px;
+        }
+        
+        .easein {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            background-color: brown;
+            transition-timing-function: ease-in;
+            transition-duration: 3s;
+        }
+        
+        .easein:hover {
+            background-color: aquamarine;
+            width: 900px;
+        }
+        
+        .easeout {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            background-color: brown;
+            transition-duration: 3s;
+            transition-timing-function: ease-out;
+        }
+        
+        .easeout:hover {
+            background-color: aquamarine;
+            width: 900px;
+        }
+        
+        .cubic {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            transition-duration: 3s;
+            background-color: brown;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        
+        .cubic:hover {
+            background-color: aquamarine;
+            width: 900px;
+        }
+        
+        .text {
+            text-shadow: 3px 1px 1px pink;
+        }
+        
+        .text:hover {
+            transition-duration: 9s;
+            transform: rotate(5turn);
+        }
+        
+        .animationdabba {
+            height: 90px;
+            width: 90px;
+            background-color: aquamarine;
+            animation: aagepiche 1s;
+            outline: 1px;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes aagepiche {
+            25% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(90deg);
+            }
+            75% {
+                transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+        
+        .animationball {
+            margin: auto;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color: aquamarine;
+            animation: uparniche 1s;
+            outline: 1px;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes uparniche {
+            50% {
+                transform: translateY(-90px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animatebounce {
+            height: 300px;
+            box-sizing: border-box;
+        }
+        
+        .animationshadow {
+            margin: auto;
+            height: 2px;
+            width: 10px;
+            border-radius: 100%;
+            box-shadow: 0px 0px 5px black;
+            background-color: rgb(0, 0, 0, 0.8);
+            animation: shadow 1s;
+            outline: 1px;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes shadow {
+            50% {
+                height: 9px;
+                width: 100px;
+            }
+            100% {
+                height: 1px;
+                width: 10px;
+            }
+        }
+        
+        .loader {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color: pink;
+            padding: 9px;
+            outline-width: 1px;
+            outline-style: solid;
+            border-top: 10px solid rgb(35, 8, 215);
+            border-right: 10px solid white;
+            border-left: 10px solid white;
+            border-bottom: 10px solid rgb(35, 8, 215);
+            animation: loader 0.7s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes loader {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dibba">
+        <h1>this is heading</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea accusantium praesentium dignissimos quo facere perspiciatis quaerat omnis unde asperiores, quibusdam ratione officiis autem, repellendus tenetur nihil sint nostrum iure placeat voluptas
+        saepe! Praesentium modi earum distinctio temporibus nulla delectus deleniti laborum? Adipisci iusto vero nam veniam. Impedit, accusantium eos beatae quaerat magnam laboriosam aspernatur dolore quas sunt eaque illum tempora dolorum? Voluptatibus
+        repellat, accusantium necessitatibus mollitia hic minus maiores commodi veniam non ea, quisquam iste repellendus sed. Porro, veniam magni aliquid possimus ipsa dolorem reprehenderit, aliquam sequi omnis consectetur repellendus, enim blanditiis
+        nobis! Voluptate, cumque commodi excepturi molestiae, ad veniam dolorum illum fuga blanditiis aperiam repudiandae neque quis? Eum, sed repudiandae natus unde veniam, accusantium maiores consectetur non laudantium obcaecati saepe omnis, facilis
+        quod at rem aliquid inventore hic officia eveniet quasi. Officia corrupti molestias recusandae eius quasi dicta unde maiores possimus beatae! Magnam delectus reiciendis facilis temporibus tempora. Velit quam porro fuga modi enim minus cupiditate
+        quis, dolore placeat delectus voluptates, esse beatae commodi, incidunt vitae? Beatae facilis repellat alias consectetur tenetur atque necessitatibus officiis amet neque doloremque rerum, incidunt ea aliquam natus, dolorum non omnis minus eligendi
+        placeat distinctio doloribus eaque cupiditate. Exercitationem fugiat cupiditate voluptate? Blanditiis voluptatum recusandae, perferendis quas quam molestiae voluptatibus architecto ex odit unde, nisi suscipit harum cumque illo. Aliquid eligendi
+        eos possimus labore, voluptas ab quidem repudiandae nesciunt, voluptates quas natus
+    </div>
+    <section class="animate"></section>
+    <section class="linear"></section>
+    <section class="easein"></section>
+    <section class="easeout"></section>
+    <section class="cubic"></section>
+
+    <section class="text">
+        <h1 style="font-size:40px;">hello I am 3D</h1>
+    </section>
+    <section class="goldabba"></section>
+    <section class="animation">
+        <h1>This is animation</h1>
+        <div class="animationdabba"></div>
+    </section>
+    <h1>This is Bounce</h1>
+    <section class="animatebounce">
+
+        <div class="animationball"></div>
+
+        <div class="animationshadow"></div>
+    </section>
+    <section>
+        <div class="loader"></div>
+    </section>
+</body>
+
+
+</html>

@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+input[type="text"] {
+    background-color: brown;
+}
+
+p~ul {
+    border: 2px solid saddlebrown;
+}
+
+button {
+    color: brown;
+    font-weight: bolder;
+    background-color: green;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: blue;
+    box-shadow: 0px 0px 7px black;
+    transform: scale(1.1, 1.1);
+}
+
+ul>li:nth-of-type(2n + 3) {
+    color: aqua;
+}
+
+p:nth-child(2) {
+    color: burlywood;
+}
+
+p:nth-child(6) {
+    color: rgb(84, 76, 117);
+}
+
+h1::before {
+    content: "this is before";
+    color: orange;
+}
+
+h1::after {
+    content: "this is after";
+    color: rgb(234, 0, 255);
+}
+
+section {
+    color: red;
+    border: 3px solid yellow;
+}
+
+div:nth-child(1) {
+    background-color: rgb(red, green, blue, 0);
+}
+
+div:nth-child(2) {
+    background-color: #12de60;
+}
+
+div:nth-child(3) {
+    background-color: #b71b79;
+}
+
+div:nth-child(4) {
+    background-color: hsl(168, 100%, 50%);
+}

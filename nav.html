@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            nav {
+                border-radius: 9px;
+                position: fixed;
+                background: linear-gradient(#e66465, #9198e5);
+                left: 0;
+                right: 0;
+                top: 0;
+                z-index: 3;
+            }
+
+            ul {
+                list-style: none;
+
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: 300;
+                color: blue;
+            }
+
+            li {
+                display: inline-block;
+                margin: 9px;
+                background-color: aqua;
+                padding: 9px;
+                border-radius: 6px;
+            }
+
+            li:hover {
+                box-shadow: inset 0px 0px 13px 1px #9351e3;
+            }
+
+            .phonebook {
+                display: inline-block;
+                position: absolute;
+                top: 15vh;
+                height: 50vh;
+                width: 50vw;
+                padding: 15px;
+                border: 3px solid grey;
+                overflow-y: scroll;
+            }
+
+            .phonebook h1 {
+                position: sticky;
+                top: 0;
+                text-align: center;
+                background-color: #9351e3;
+            }
+
+            .phonebook ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+
+            .phonebook li {
+                display: block;
+                margin-left: -1;
+                text-align: center;
+                background-color: aquamarine;
+            }
+
+            .news {
+                position: absolute;
+                display: block;
+                top: 90vh;
+                height: 20vh;
+                border: 2px solid black;
+                overflow-y: scroll;
+            }
+
+            .news div img {
+                border: 5px solid pink;
+                height: 100px;
+                float: right;
+            }
+
+            .news div p {
+                clear: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a> </li>
+                <li style="float:right ;"><a href="">Contact</a> </li>
+                <li><a href=""> About</a></li>
+                <li><a href="">Services</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="phonebook">
+            <h1>A</h1>
+            <ul>
+                <li> A 98943850</li>
+                <li> A 98943850</li>
+                <li> A 98943850</li>
+                <li> A 98943850</li>
+                <li> A 98943850</li>
+            </ul>
+            <h1>B</h1>
+            <ul>
+                <li> B 98943850</li>
+                <li> B 98943850</li>
+                <li> B 98943850</li>
+                <li> B 98943850</li>
+                <li> B 98943850</li>
+            </ul>
+            <h1>C</h1>
+            <ul>
+                <li> C 98943850</li>
+                <li> C 98943850</li>
+                <li> C 98943850</li>
+                <li> C 98943850</li>
+                <li> C 98943850</li>
+                <li> C 98943850</li>
+            </ul>
+        </section>
+        <section class="news">
+            <div>
+                <img src=" https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eum reiciendis qui consectetur, amet
+                    delectus magnam atque sit autem ea sint doloremque excepturi. Molestias ut eaque laboriosam ex
+                    temporibus velit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cupiditate illum illo delectus
+                    saepe
+                    ab animi hic perferendis rem adipisci? Asperiores voluptas ducimus debitis, aliquid fuga
+                    consequuntur
+                    officiis. Voluptas, doloribus.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia hic ad, nostrum iste nulla
+                    magnam! Corrupti, quae sint cum maxime dolor, doloribus omnis magnam veritatis eos aliquam commodi
+                    consectetur.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ipsum rem! Quisquam itaque quod
+                    perferendis, labore quasi repellat deleniti minus rem incidunt totam reiciendis eum porro fugit
+                    autem
+                    quo perspiciatis.</p>
+
+            </div>
+
+        </section>
+    </body>
+
+</html>

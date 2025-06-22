@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+        <style>
+            #details {
+                display: none;
+                margin-top: 1em;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <section class="vh-100" style="background-color: #4B515D;">
+
+            <div class="container py-5 h-100">
+
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-8 col-lg-6 col-xl-4">
+
+                        <div class="card" style="color: #4B515D; border-radius: 35px;">
+                            <div class="card-body p-4">
+                                <div>
+                                    <form action="">
+                                        <span>enter city name:-</span>
+                                        <input type="text" id="takeinput">
+                                        <input type="submit" value="Submit" id="submit">
+                                    </form>
+                                </div>
+                                <div id="details">
+                                    <div class="d-flex">
+                                        <h6 class="flex-grow-1" id="city"></h6>
+                                        <h6 id="time"></h6>
+                                    </div>
+
+                                    <div class="d-flex flex-column text-center mt-5 mb-4">
+                                        <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"
+                                            id="temperature"> </h6>
+                                        <span class="small" style="color: #868B94" id="weather"></span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-grow-1" style="font-size: 1rem;">
+                                            <div id="speed"> <span class="ms-1">
+                                                </span></div>
+                                            <div id="humidity">
+                                                <span class="ms-1">
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div id="showimg"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <script src="weather.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://kit.fontawesome.com/e9fbad69b9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            font-size: 70%;
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            display: flex;
+            height: 10vh;
+            background-color: rgb(36, 13, 13);
+            justify-content: space-between;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .col {
+            color: rgb(8, 143, 143);
+            font-size: 40px;
+        }
+        
+        .text {
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            margin: 0px 10px;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .navitem {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .buttonnav {
+            background-color: transparent;
+            color: #29d9d5;
+            border: 1px solid #29d9d5;
+            padding: 9px;
+            border-radius: 5px;
+            margin-top: 7px;
+            width: 100px;
+        }
+        
+        .photoblog {
+            margin: 9px;
+            background-color: bisque;
+            padding: 9px;
+            border-radius: 3px;
+        }
+        
+        .blue {
+            font-size: 20px;
+            font-weight: 900;
+            color: rgb(5, 5, 95);
+        }
+        
+        .item {
+            display: flex;
+            margin: 0px 20px;
+            gap: 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .images {
+            height: 250px;
+            width: 300px;
+            border-radius: 9px;
+        }
+        
+        .letscap {
+            display: flex;
+            justify-content: center;
+            height: 50vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px;
+            background: url("https://images.unsplash.com/photo-1623323650038-2368bcf1652b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
+            box-shadow: inset 0px 0px 100em 0px rgb(1, 247, 243, 0.4);
+            background-size: cover;
+        }
+        
+        .hedsky {
+            color: #29d9d5;
+            font-size: 20px;
+        }
+        
+        .hedwhite {
+            color: white;
+            font-weight: 900;
+            font-size: 50px;
+        }
+        
+        .contain {
+            text-align: center;
+            color: white;
+            font-size: 17px;
+        }
+        
+        .navitem>a:hover {
+            color: #29d9d5;
+        }
+        
+        .buttonnav:hover {
+            background-color: #29d9d5;
+            color: black;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+        }
+        
+        .first,
+        .second,
+        .third {
+            width: 30vw;
+            display: flex;
+            border: 1px solid black;
+            flex-direction: column;
+        }
+        
+        input {
+            border: 1px solid #29d9d5;
+            background-color: transparent;
+            padding: 9px;
+            border-radius: 5px;
+        }
+        
+        input:focus {
+            border: 1px solid #29d9d5;
+            outline: none;
+        }
+        
+        input:active {
+            border: 1px solid #29d9d5;
+        }
+        
+        .icons {
+            font-size: 15px;
+            color: #29d9d5;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .images:hover {
+            filter: grayscale(0.5);
+        }
+        
+        .ic {
+            border: 1px solid #29d9d5;
+            padding: 6px;
+            font-size: 9px;
+            border-radius: 50%;
+        }
+        
+        .centered {
+            opacity: 0;
+            position: relative;
+            top: -110px;
+            left: -170px;
+            font-size: 17px;
+        }
+        
+        .image:hover i {
+            opacity: 1;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li><i class="fa-solid fa-camera col"></i></li>
+            <li class="text">IMAGE</li>
+        </ul>
+        <ul class="nav">
+            <li class="navitem"><a href="">Home</a></li>
+            <li class="navitem"><a href="">About</a></li>
+            <li class="navitem"><a href="">Blogs</a></li>
+            <li class="navitem"><a href="">Plans</a></li>
+            <li class="navitem"><a href="">Gallery</a></li>
+            <li class="navitem"><a href="">Contact US</a></li>
+        </ul>
+        <ul class="nav">
+            <li><button class="buttonnav">Book trial</button></li>
+        </ul>
+    </nav>
+    <section class="photoblog">
+        <div class="blue">Photographer's Blog</div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur magni nihil provident blanditiis repellendus tempora consequatur.
+        </div>
+    </section>
+    <section class="item">
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+        <div class="image">
+            <img src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" alt="" class="images" />
+            <i class="fa-solid fa-camera centered"></i>
+        </div>
+
+
+    </section>
+    <section class="letscap">
+        <div class="hedsky">Start your journey</div>
+        <div class="hedwhite">Let's Capture This World</div>
+        <div class="contain">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi!
+        </div>
+        <div><button class="buttonnav">Book Trial</button></div>
+    </section>
+    <footer>
+        <div class="first">
+            <h1>Photography</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            <div class="icons"><i class="fa-brands fa-facebook ic"></i><i class="fa-brands fa-twitter ic"></i> <i class="fa-brands fa-instagram ic"></i> <i class="fa-brands fa-linkedin ic"></i></div>
+
+        </div>
+        <div class="second">
+            <h1>Contact info</h1>
+            <p>New Delhi</p>
+            <p><i class="fa-solid fa-arrow-pointer"></i> 9999-9999-999</p>
+            <p>Abcd@gmail.com</p>
+            <p>7:00am-10:00pm</p>
+        </div>
+        <footer class="third">
+            <h1>Newsletters</h1>
+            <p>
+                Subscribe For Latest Upadates</p>
+            <input type="email" name="" id="" placeholder="enter your name" />
+            <button class="buttonnav">Subscribe</button>
+            </div>
+        </footer>
+</body>
+
+</html>

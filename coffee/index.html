@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e9fbad69b9.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            color: white;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5em 2em;
+            height: 15vh;
+            align-items: center;
+            border-bottom: 1px solid white;
+        }
+        
+        .hed1 {
+            font-size: 35px;
+        }
+        
+        nav>ul {
+            list-style: none;
+        }
+        
+        #menu>ul {
+            display: flex;
+            gap: 2em;
+            list-style: none;
+        }
+        
+        #cartsearch>ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+        }
+        
+        #tcontent>h1 {
+            font-size: 45px;
+            margin-bottom: 5px;
+        }
+        
+        #main {
+            height: 85vh;
+            background: url("home-img.jpeg") no-repeat center;
+            background-size: cover;
+        }
+        
+        #tcontain {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            padding: 5em 7em;
+            justify-content: center;
+            width: 50%;
+        }
+        
+        .button {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            background-color: rgb(146, 142, 35);
+            margin-top: 14px;
+            font-size: 20px;
+            border: none;
+            color: white;
+            outline: none;
+            padding: 2px;
+            width: 50%;
+        }
+        
+        #tcontain>button:hover {
+            animation: button 1s;
+            animation-fill-mode: forwards
+        }
+        
+        @keyframes button {
+            100% {
+                width: 100%;
+            }
+        }
+        
+        #about {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            padding: 10px 30px;
+        }
+        
+        #aboutimg {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .carddibba {
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+        
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            border: 1px solid grey;
+        }
+        
+        s {
+            font-size: 10px;
+            color: grey;
+        }
+        
+        .hedfis {
+            text-align: center;
+        }
+        
+        .cards img {
+            margin: 7px auto;
+            margin-bottom: 30px;
+            height: 100px;
+            border-radius: 50%;
+            width: 100px;
+            border: 2px solid black;
+        }
+        
+        #aboutimg>img {
+            width: 100%;
+            object-fit: contain;
+            padding: 45px;
+        }
+        
+        #aboutcon {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+        }
+        
+        #firsth {
+            color: rgb(137, 127, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="icon">
+            <img src="logo.png" alt="iconhu" />
+        </div>
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Product</li>
+                <li>Review</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div id="cartsearch">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="tcontain">
+            <h1 class="hed1">FRESH COFFEE IN THE MORNING</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptates excepturi veniam, tempore cupiditate aspernatur.
+            </p>
+            <button class="button">Get Yours Now</button>
+        </div>
+    </div>
+
+    <h1 class="hed1 hedfis"><span id="firsth">ABOUT</span> US</h1>
+
+    <section id="about">
+        <div id="aboutimg">
+            <img src="about-img.jpeg" alt="" />
+        </div>
+        <div id="aboutcon">
+            <h1 class="hed1">What Make Our Coffee Special?</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum. Laudantium id blanditiis ducimus sed, est fugiat, obcaecati quisquam aspernatur veritatis tempore at molestias aliquam, neque asperiores facere praesentium unde?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod nobis eum, doloremque consequatur praesentium!
+            </p>
+            <button class="button">Contact us</button>
+        </div>
+    </section>
+    <h1 class="hed1 hedfis">OUR <span id="firsth">MENU</span></h1>
+
+    <section class="carddibba">
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-1.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-2.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-3.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-4.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-5.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+        <div class="cards">
+            <div style="display: flex">
+                <img src="menu-6.png" alt="photo" />
+            </div>
+            <div>
+                <h1>Tasty and healthy</h1>
+            </div>
+            <div>$15.99 <s>20.99</s></div>
+            <button class="button">Add to Card</button>
+        </div>
+    </section>
+    <h1 class="hed1 hedfis"> OUR<span id="firsth">PRODUCTS</span></h1>
+
+    <section id="">
+</body>
+
+</html>

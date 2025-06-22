@@ -1,0 +1,112 @@
+p {
+  display: inline-block;
+  border: 3px solid pink;
+  width: 150px;
+  border-radius: 9px;
+  height: 150px;
+  margin: 3px auto;
+  padding: 40px;
+} /* 
+section {
+  width: 800px;
+  height: 800px;
+  border: 2px solid gray;
+  background-image: url(https://source.unsplash.com/random/1920x1080/?wallpaper,landscape); */
+/* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}*/
+/* h1 {
+  border: 2px solid green;
+  border-radius: 5px;
+}
+div {
+  text-align: center;
+  height: 20vh;
+  width: 150px;
+  background-color: rgb(226, 14, 159);
+}
+div:hover {
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 20px 8px rgb(228, 234, 57);
+}
+article {
+  font-size: 20px;
+}
+ul {
+  font-size: 1.1rem; 
+}*/
+section {
+  position: sticky;
+  padding: 80px;
+  background-color: aqua;
+  height: 230px;
+  border: 2px solid gray;
+}
+section > div {
+  background-color: palevioletred;
+  width: 50em;
+  height: 200px;
+
+  margin: 0 auto;
+}
+p:nth-child(1):hover {
+  display: none;
+}
+div > div {
+  position: relative;
+  display: inline-block;
+  right: 0;
+  top: 34px;
+  border: 3px solid pink;
+  width: 10px;
+  border-radius: 9px;
+  height: 10px;
+  margin: 3px auto;
+  padding: 40px;
+}
+#div1 {
+  position: relative;
+  display: inline-block;
+  right: 0px;
+  left: 45px;
+  top: 45px;
+  bottom: 0px;
+  border: 3px solid pink;
+  width: 150px;
+  border-radius: 9px;
+  height: 150px;
+  margin: 3px auto;
+  padding: 40px;
+}
+.absolute > div {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 34px;
+  border: 3px solid pink;
+  width: 10px;
+  border-radius: 9px;
+  height: 10px;
+  margin: 3px auto;
+  padding: 40px;
+}
+#div2 {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 34px;
+  border: 3px solid pink;
+  width: 10px;
+  border-radius: 9px;
+  height: 10px;
+  margin: 3px auto;
+  padding: 40px;
+}
+.fixed {
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  left: 0;
+}

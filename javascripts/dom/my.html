@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <style>
+      #main-div {
+        border: 1px solid blue;
+        height: 230px;
+        width: 230px;
+      }
+
+      :root {
+        background-color: var(--radio-color);
+      }
+
+      body {
+        background-color: var(--radio-color);
+      }
+
+      .form-control {
+        margin: 50px;
+        border: 0;
+      }
+
+      .color-changer {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        width: fit-content;
+        margin-inline: auto;
+        border: 0;
+        background-color: white;
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid;
+        border-radius: 50%;
+      }
+
+      input[type="radio"]:checked {
+        background-color: var(--radio-color);
+      }
+
+      #BabyPink {
+        --radio-color: rgb(242, 172, 185);
+      }
+
+      #Blue {
+        --radio-color: rgb(19, 64, 179);
+      }
+
+      #Orange {
+        --radio-color: rgb(227, 110, 19);
+      }
+
+      #Dark {
+        --radio-color: rgb(32, 42, 68);
+      }
+
+      #Light {
+        --radio-color: rgb(205, 183, 187);
+      }
+
+      :root:has(#Blue:checked) {
+        background-color: rgb(19, 64, 179);
+      }
+
+      :root:has(#BabyPink:checked) {
+        background-color: rgb(242, 172, 185);
+      }
+
+      :root:has(#Dark:checked) {
+        background-color: rgb(32, 42, 68);
+      }
+
+      :root:has(#Orange:checked) {
+        background-color: rgb(227, 110, 19);
+      }
+
+      :root:has(#Light:checked) {
+        background-color: rgb(205, 183, 187);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="main-header" class="bg-primary text-white p-4 mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 id="header-title">MY LIST</h1>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <input type="text" class="form-control" id="filter" placeholder="Search Items" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <form class="form-control">
+      <fieldset class="color-changer">
+        <legend>Change Themes</legend>
+
+        <label for="Light">Light</label>
+        <input type="radio" id="Light" name="theme" />
+
+        <label for="Blue">Blue</label>
+        <input type="radio" id="Blue" name="theme" />
+
+        <label for="Orange">Orange</label>
+        <input type="radio" id="Orange" name="theme" />
+
+        <label for="BabyPink">BabyPink</label>
+        <input type="radio" id="BabyPink" name="theme" />
+
+        <label for="Dark">Dark</label>
+        <input type="radio" id="Dark" name="theme" />
+      </fieldset>
+    </form>
+    <div class="container">
+      <div id="main" class="card card-body">
+        <h2 class="title">Add Items</h2>
+        <form id="addForm" class="form-inline mb-3">
+          <input type="text" class="mr-2" id="item" />
+          <input type="submit" id="submit" class="btn btn-dark" value="Submit" />
+        </form>
+        <p id="showonclick"></p>
+        <h2 class="title">Items</h2>
+        <ul id="items" class="list-group">
+          <li class="list-group-item">
+            Item 1
+            <button class="btn btn-danger btn-sm float-right delete">X</button>
+          </li>
+          <li class="list-group-item">
+            Item 2
+            <button class="btn btn-danger btn-sm float-right delete">X</button>
+          </li>
+          <li class="list-group-item">
+            Item 3
+            <button class="btn btn-danger btn-sm float-right delete">X</button>
+          </li>
+          <li class="list-group-item">
+            Item 4
+            <button class="btn btn-danger btn-sm float-right delete">X</button>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button id="buttonclick">submit</button>
+        <!-- <button id="buttonclick" onclick="hello()"> submit</button> -->
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
